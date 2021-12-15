@@ -1,10 +1,12 @@
 # Termux
 ## • Installation
+### `cd /sdcard`
 ### `pkg install python git -y`
-## • Run
 ### `git clone https://github.com/maihuybao/runtool`
-### `cd runtool`
-### `python main.py`
+### `cd runtool/termux`
+### `bash setup.bash`
+## • Run
+### `cd /sdcard/runtool/termux/ && python main.py`
 
 # Windows
 ## • Installation
