@@ -9,10 +9,10 @@ print('\033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mTiến Hành Cài Đặt \033
 if type == 'arm' or type == 'armv8l' or type == 'armv7l':
   print(f'\033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mĐã Tìm Thấy Phiên Bản \033[1;32m{type} \033[1;37m Phù Hợp Với Thiết Bị Của Bạn...')
   os.system('curl https://raw.githubusercontent.com/maihuybao/runtool/main/termux/command/arm.sh | bash')
-if type == 'arm64':
+elif type == 'arm64':
   print(f'\033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mĐã Tìm Thấy Phiên Bản \033[1;32m{type} \033[1;37m Phù Hợp Với Thiết Bị Của Bạn...')
   os.system('curl https://raw.githubusercontent.com/maihuybao/runtool/main/termux/command/arm64.sh | bash')
-if type == 'aarch64':
+elif type == 'aarch64':
   print(f'\033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mĐã Tìm Thấy Phiên Bản \033[1;32m{type} \033[1;37m Phù Hợp Với Thiết Bị Của Bạn...')
   os.system('curl https://raw.githubusercontent.com/maihuybao/runtool/main/termux/command/aarch64.sh | bash ')
 else:
